@@ -79,18 +79,20 @@
 
 /* custom */
 body{
-  background: #111;
+  background: #555;
   color:#fff;
 }
-[role="tablist"]::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 4px;
-  scale: var(--_width, 0.125) 1;
-  translate: var(--_left, 0) 0;
-  transform-origin: left;
-  transition: scale 200ms, translate 200ms;
-  background: white;}
+
+::-webkit-scrollbar{
+  width: 5px;
+  height: 5px;
+  padding:2px;
+}
+::-webkit-scrollbar-thumb{
+  background: #fff;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-track{
+  background: #aaa;
+  border-radius: 20px;
+}
